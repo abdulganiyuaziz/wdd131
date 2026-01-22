@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover Ghana – culture, weather, and attractions." />
+  <title>Ghana</title>
+
+  <link rel="stylesheet" href="place.css" />
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Ghana</h1>
+  </header>
+
+  <!-- HERO -->
+  <picture class="hero">
+    <source srcset="images/hero-large.jfif" media="(min-width: 900px)" />
+    <source srcset="images/hero-medium.jfif" media="(min-width: 500px)" />
+    <img src="images/hero-small.jfif" alt="Landscape view of Ghana" />
+  </picture>
+
+  <main>
+    <!-- ABOUT -->
+    <section class="card">
+      <h2>About Ghana</h2>
+      <p>
+        Ghana is a West African country known for its rich culture, friendly
+        people, historical landmarks, and beautiful landscapes.
+      </p>
+    </section>
+
+    <!-- WEATHER -->
+    <section class="card weather">
+      <h2>Weather</h2>
+
+      <!-- Mobile icon -->
+      <img src="images/weather.jfif" alt="Weather icon" class="weather-icon" />
+
+      <p>Temperature: <span id="temp">30</span>°C</p>
+      <p>Wind Speed: <span id="speed">10</span> km/h</p>
+      <p>Wind Chill: <span id="windchill">--</span></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      © <span id="year"></span> | Abdul Ganiyu Abdul Aziz |
+      Last Modified: <span id="modified"></span>
+    </p>
+  </footer>
+</body>
+</html>
