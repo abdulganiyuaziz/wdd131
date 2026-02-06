@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Review Confirmation</title>
+</head>
+<body>
+  <h1>Thank you for your review!</h1>
+  <p>You have submitted <span id="counter"></span> reviews so far.</p>
+
+  <script>
+    let count = localStorage.getItem("reviewCount") || 0;
+    count++;
+    localStorage.setItem("reviewCount", count);
+    document.getElementById("counter").textContent = count;
+  </script>
+</body>
+</html>
