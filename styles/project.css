@@ -1,0 +1,132 @@
+/* ====== Global Styles ====== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #222;
+}
+
+/* ====== Header & Navigation ====== */
+header {
+  background-color: #003366;
+  color: #ffffff;
+  padding: 1rem;
+}
+
+header h1 {
+  margin: 0 0 0.5rem 0;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-list a:hover {
+  text-decoration: underline;
+}
+
+/* ====== Main Content ====== */
+main {
+  padding: 1rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+.featured img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* ====== Form Styling ====== */
+form {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #003366;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #0055aa;
+}
+
+#message {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+/* ====== Reviews ====== */
+.review-card {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  border-left: 6px solid #007acc;
+  background-color: #eef7ff;
+}
+
+/* ====== Footer ====== */
+footer {
+  background-color: #003366;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+footer a {
+  color: #ffffff;
+}
+
+/* ====== Responsive Design ====== */
+@media (max-width: 600px) {
+  .nav-list {
+    flex-direction: column;
+  }
+}
